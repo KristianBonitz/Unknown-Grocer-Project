@@ -1,0 +1,19 @@
+.main{
+}
+
+.hide{
+	display:none;
+}
+.text-container{
+	width: 90%;
+	max-width: 33em;
+	padding-left: 2em;
+}
+.main{
+
+}
+
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}
