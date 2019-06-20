@@ -1,4 +1,42 @@
-.main{
+body{
+	background-color: #0CACBF;
+	color: #dee; 
+	font-family: 'Signika Negative'
+	display: flex;
+}
+
+.main-container{
+	display: block;
+	position: relative;
+	-webkit-box-flex: 1;
+}
+
+.bg-image{
+	/*display: fixed;
+	float:left;
+	height: 700px;
+	padding: 0 0 0 300px;
+	right: 500px;*/
+	display: none;
+	bottom: 0;
+	position: absolute;
+	overflow: hidden;
+	right: 0;
+	text-align: right;
+	top: 0;
+	height: 100vh;
+	max-width: 50%;
+	z-index: 0;
+}
+
+.bg-image img{
+	max-width: 100%
+}
+
+.dropcap{
+	font-size: 140px;
+	font-family: 'Gravitas One';
+	margin: 0;
 }
 
 .hide{
@@ -7,13 +45,21 @@
 .text-container{
 	width: 90%;
 	max-width: 33em;
-	padding-left: 2em;
+	padding: 0 5% 0 5%;
+	margin-top: 180px;
+	font-family: 'Signika Negative'
 }
-.main{
-
+.logo{
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
-@include media-breakpoint-up(sm) {}
+@media screen and (min-width: 700px) {
+	.text-container{
+		padding: 0 15%;
+	}
+}
 @include media-breakpoint-up(md) {}
 @include media-breakpoint-up(lg) {}
 @include media-breakpoint-up(xl) {}
